@@ -1,0 +1,10 @@
+time="2024-01-14T19:22:38+05:30" level=error msg="cannot load env file" error="open .env: no such file or directory"
+time="2024-01-14T19:22:38+05:30" level=info msg="server listening at port :3000"
+time="2024-01-14T19:22:38+05:30" level=info msg="checking git is installed"
+time="2024-01-14T19:22:38+05:30" level=info msg="checking docker is installed"
+CONTAINER ID   IMAGE                          COMMAND        CREATED              STATUS              PORTS     NAMES
+2f42b27f5ba0   harness/delegate:23.12.82001   "./start.sh"   About a minute ago   Up About a minute             festive_johnson
+time="2024-01-14T19:22:38+05:30" level=info msg="docker is installed"
+time="2024-01-14T19:22:38+05:30" level=info msg="Runner version: 0.1.2"
+time="2024-01-14T19:22:38+05:30" level=info msg="Runner version: 0.1.2"
+time="2024-01-14T19:22:38+05:30" level=warning msg="RUNNING IN INSECURE MODE"

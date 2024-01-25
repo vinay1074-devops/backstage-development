@@ -1,0 +1,35 @@
+pipeline:
+  name: ${{ values.name }}
+  identifier: ${{ values.name }}
+  projectIdentifier: default_project
+  orgIdentifier: default
+  tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: YuvarajK_GitHub
+        repoName: web_app
+        build: <+input>
+  stages:
+    - stage:
+        name: Buid
+        identifier: Build
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  type: Run
+                  name: Run_1
+                  identifier: Run_1
+                  spec:
+                    shell: Sh
+                    command: mvn clean install

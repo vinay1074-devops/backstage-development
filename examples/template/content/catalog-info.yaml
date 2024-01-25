@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ${{ values.name | dump }}
+  annotations:
+    # optional annotations
+       harness.io/pipelines: |
+         Pipeline1: https://app.harness.io/ng/account/-Sey-zxTQR-W6TCw2Ud0Kw/all/orgs/default/projects/default_project/pipelines/${{ values.name }}/pipeline-studio?storeType=INLINE
+  links:
+    - url: https://app.harness.io/ng/account/-Sey-zxTQR-W6TCw2Ud0Kw/all/orgs/default/projects/default_project/pipelines/${{ values.name }}/pipeline-studio?storeType=INLINE
+      title: Harness_Dashboard
+      icon: dashboard
+
+spec:
+  type: service
+  owner: user:guest
+  lifecycle: experimental
