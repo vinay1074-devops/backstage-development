@@ -44,8 +44,8 @@ import {
   const client = new CostExplorerClient({
     region: 'REGION',
     credentials: {
-      accessKeyId: 'AKIAWXQKCUYUHMWG2LDZ',
-      secretAccessKey: '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',
+      accessKeyId: '',
+      secretAccessKey: '',
     },
   });
 
